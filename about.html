@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om - Webbutveckling I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-section {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .profile-image {
+            flex-shrink: 0;
+        }
+        
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .profile-content {
+            flex: 1;
+        }
+        
+        .profile-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .info-section {
+            background-color: #ecf0f1;
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .info-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .info-section p {
+            margin-bottom: 1rem;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-image img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DT057G - Webbutveckling I</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="courses.html">Kurser</a></li>
+                <li><a href="pictures.html">Bilder</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Om mig</h1>
+        
+        <section class="profile-section">
+            <div class="profile-image">
+                <img src="bilder/bild1.png" alt="Profilbild">
+            </div>
+            <div class="profile-content">
+                <h2>Välkommen!</h2>
+                <p>Mitt namn är Sebastian och jag studerar webbutveckling på Mittuniversitetet. Jag har alltid varit intresserad av teknsika saker samt haft ett stort dator intresse genom åren, vilket ledde mig till att välja denna utbildning.</p>
+                <p>På denna webbplats presenterar jag mitt arbete och mina projekt inom webbutveckling. Här kan du se exempel på vad jag lärt mig under utbildningens tid.</p>
+        </section>
+        
+        <section class="info-section">
+            <h2>Mina intressen</h2>
+            <p>För mig är det viktigt att umgås och spendera tid med familj och vänner. Det finns inget bättre än att upptäcka nya platser tillsammans, utforska okända miljöer och skapa minnen genom gemensamma äventyr. Oavsett om det handlar om spontana utflykter, resor till nya destinationer eller att helt enkelt prova på något nytt.</p>
+        </section>
+        
+        <section class="info-section">
+            <h2>Tekniska färdigheter</h2>
+            <p>Under kursen kommer jag lära mig och arbetat med följande teknologier:</p>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <strong>HTML5</strong>
+                    <p>Semantisk markup och struktur</p>
+                </div>
+                <div class="skill-item">
+                    <strong>CSS3</strong>
+                    <p>Styling och layout</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Responsiv design</strong>
+                    <p>Mobilvänliga webbplatser</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Validering</strong>
+                    <p>Korrekt och standardiserad kod</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Tillgänglighet</strong>
+                    <p>WCAG-riktlinjer</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Versionshantering</strong>
+                    <p>Git och GitHub</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>Utbildning</h2>
+            <p><strong>Mittuniversitetet</strong> - Webbutveckling</p>
+            <p>Kurser som ingår i programmet:</p>
+            <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                <li>DT057G - Webbutveckling I</li>
+                <li>DT084G - Introduktion till programmering med JavaScript</li>
+                <li>DT200G - Grafisk teknik för webb</li>
+                <li>DT068G - Webbanvändbarhet</li>
+                <li>Och många fler...</li>
+            </ul>
+        </section>
+        
+        <section class="info-section">
+            <h2>Kontakta mig</h2>
+            <p>Är du intresserad av att veta mer om mig eller mitt arbete? Tveka inte att kontakta mig via <a href="contact.html" style="color: #3498db;">kontaktformuläret</a> eller skicka ett e-mail till <a href="mailto:seli2501@student.miun.se" style="color: #3498db;">seli2501@student.miun.se</a>.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>DT057G - Webbutveckling I | Kontakta mig via <a href="mailto:seli2501@student.miun.se">seli2501@student.miun.se</a></p>
+    </footer>
+</body>
+</html>

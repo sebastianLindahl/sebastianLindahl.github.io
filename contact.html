@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Webbutveckling I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-intro {
+            background-color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        form {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        fieldset {
+            border: 2px solid #2c3e50;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        legend {
+            color: #2c3e50;
+            font-weight: bold;
+            padding: 0 0.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 2rem;
+            margin-top: 0.5rem;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .radio-option input[type="radio"] {
+            width: auto;
+        }
+        
+        .checkbox-group {
+            margin-top: 0.5rem;
+        }
+        
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .checkbox-option input[type="checkbox"] {
+            width: auto;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        button {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button[type="submit"] {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        
+        button[type="reset"] {
+            background-color: #95a5a6;
+            color: white;
+        }
+        
+        button[type="reset"]:hover {
+            background-color: #7f8c8d;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DT057G - Webbutveckling I</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="courses.html">Kurser</a></li>
+                <li><a href="pictures.html">Bilder</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Kontakta mig</h1>
+        
+        <div class="contact-intro">
+            <p>Har du frågor eller vill komma i kontakt? Fyll i formuläret nedan så återkommer jag så snart som möjligt. Du kan även kontakta mig direkt via e-post eller telefon.</p>
+        </div>
+        
+        <form action="mailto:namn@domain.se" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Kontaktformulär</legend>
+                
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" placeholder="Förnamn Efternamn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-postadress:</label>
+                    <input type="email" id="email" name="email" placeholder="namn@hotmail.se" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Yrke:</label>
+                    <select id="subject" name="subject">
+                        <option value="webbutvecklare">Webbutvecklare</option>
+                        <option value="webbdesigner">Webbdesigner</option>
+                        <option value="projektledare">Projektledare</option>
+                        <option value="natverksspecialist">Nätverksspecialist</option>
+                        <option value="administrator">Administratör</option>
+                        <option value="annat">Annat</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nyhetsbrev:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter" style="display: inline; font-weight: normal;">Ja, jag vill prenumerera på nyhetsbrev</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Anställd:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="employed-yes" name="employed" value="ja" checked>
+                            <label for="employed-yes" style="display: inline; font-weight: normal;">Ja</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="employed-no" name="employed" value="nej">
+                            <label for="employed-no" style="display: inline; font-weight: normal;">Nej</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." required></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit">Skicka</button>
+                    <button type="reset">Nollställ</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>DT057G - Webbutveckling I | Kontakta mig via <a href="mailto:seli2501@student.miun.se">seli2501@student.miun.se</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida - Webbutveckling I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #34495e;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        
+        .news-article {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .news-article h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-article img {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .news-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DT057G - Webbutveckling I</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="courses.html">Kurser</a></li>
+                <li><a href="pictures.html">Bilder</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Välkommen till min webbplats</h1>
+        
+        <article class="news-article">
+            <h2>Nyhet 1</h2>
+            <img src="bilder/bild1.png" alt="Industribebyggelse vid vatten">
+            <div class="news-date">2025-08-12</div>
+            <p>Webbutveckling är ett av de snabbast växande områdena inom tech-branschen. Med nya teknologier som kommer varje år blir det allt viktigare att hålla sig uppdaterad. Under min utbildning har jag lärt mig grunderna i HTML5, CSS3 och responsiv design. Det är fascinerande att se hur en enkel kod kan förvandlas till en interaktiv och visuell upplevelse för användare över hela världen. Framtiden för webbutveckling ser ljus ut med AI integration och ännu mer avancerade verktyg.</p>
+        </article>
+        
+        <article class="news-article">
+            <h2>Nyhet 2</h2>
+            <img src="bilder/bild2.png" alt="Modern arkitektur">
+            <div class="news-date">2025-07-28</div>
+            <p>I dagens digitala värld används mobiler och surfplattor mer än någonsin. Därför är responsiv design inte längre en val, det är ett krav. Under kursen har jag lärt mig vikten av att skapa webbplatser som fungerar lika bra på en smartphone som på en stor desktop skärm. Genom att använda flexibla layouter och media kan vi säkerställa att alla användare får en optimal upplevelse oavsett enhet. Det är utmanande men otroligt tillfredsställande när allt fungerar perfekt!</p>
+        </article>
+        
+        <article class="news-article">
+            <h2>Nyhet 3</h2>
+            <img src="bilder/bild3.png" alt="Naturlandskap">
+            <div class="news-date">2025-07-15</div>
+            <p>Att skapa min första kompletta webbplats har varit en lärorik resa! Från att planera strukturen med sitemap till att faktiskt koda varje sida - varje steg har lärt mig något nytt. Jag har arbetat med allt från navigation och formulär till bildgallerier och tabeller. Det som började som tomma HTML-filer har nu blivit en funktionell webbplats med flera undersidor. Jag är stolt över resultatet och ser fram emot att utveckla mina färdigheter ytterligare i kommande kurser. Detta är bara början!</p>
+        </article>
+    </main>
+    
+    <footer>
+        <p>DT057G - Webbutveckling I | Kontakta mig via <a href="mailto:seli2501@student.miun.se">seli2501@student.miun.se</a></p>
+    </footer>
+</body>
+</html>
